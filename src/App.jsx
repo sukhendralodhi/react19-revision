@@ -1,4 +1,4 @@
-import { CardWithoutJSX } from "./Card"
+import { StyledForm } from "./StyledForm"
 
 function Welcome() {
   return <h2>Hello Welcome</h2>
@@ -16,9 +16,11 @@ function App() {
       {/* <h1>Hello, React!</h1> */}
       {/* <Hello /> */}
       {/* <HelloWithoutJSX /> */}
-      <CardWithoutJSX />
+      {/* <CardWithoutJSX />
+      <ContactFrom /> */}
       {/* <Welcome /> */}
       {/* <Button /> */}
+      <StyledForm />
     </div>
   )
 }

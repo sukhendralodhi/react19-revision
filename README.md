@@ -42,3 +42,14 @@ export const HelloWithoutJSX = () => {
 ## Returning from functions in JavaScript
 - You can not return two or more objects from a function without wrapping them array
 - You can not return two or more JSX elements without wrapping them into a parent element.
+
+## Rules 2
+- Every single tag must be properly closed
+1. Even the ones that do not need closing tags in HTML
+
+## Rules 3 
+- Attribute names must be written in camelCase
+1. Since JSX is an extension of JavaScript, HTML attributes that conflict with JavaScript keywords need different names
+
+## Rules 
+- You can embed JavaScript expressions directly in your markup using curly braces
