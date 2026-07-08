@@ -141,4 +141,30 @@ export const UserDetails = ({ name, isOnline, hideOffline }) => {
 
 3. AND Operator (&&)
 
+```javascript
+ return (
+        <div>
+            <h3>
+                {name}
+                {isPremium && <span> Premium Member </span>}
+                {isNewUser && <span>New User </span>}
+            </h3>
+            <p>{isOnline ? "Online" : "Offline"}</p>
+            <p>{isOnline ? "Available for chat" : "Not Availble for chat"}</p>
+            {
+                isOnline ? (
+                    <button>Send Message</button>
+                ) : (
+                    <p>Check back later</p>
+                )
+            }
+            <p>Check back later</p>
+        </div>
+    )
+```
+
+4. Variables for complex Logic
+
+## React 19 (Activity Component)
+
 

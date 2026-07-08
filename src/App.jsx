@@ -31,7 +31,14 @@ function App() {
         <p>sanju@gmail.com</p>
         <button>Edit Profile</button>
       </CardWrapper> */}
-      <UserDetails name="Mohan" isOnline={true} hideOffline={true} />
+      <UserDetails
+        name="Mohan"
+        isOnline={true}
+        hideOffline={true}
+        isNewUser={false}
+        isPremium={false}
+        role="Vip"
+      />
       {/* <UserDetails name="Deepak" isOnline={false} hideOffline={true} /> */}
     </div>
   )
