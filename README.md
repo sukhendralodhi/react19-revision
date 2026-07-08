@@ -53,3 +53,37 @@ export const HelloWithoutJSX = () => {
 
 ## Rules 
 - You can embed JavaScript expressions directly in your markup using curly braces
+
+## props pattern
+- Default props
+1. the default value is only used if the props is missing or if you pass undefined
+2. if you pass null or 0, the default value won't be used
+3. forwarding props with spread operator
+
+## Passing JSX as children
+- In HTML you know that it is natural to nest elements inside each other 
+- In React, you can do that exact same thing with components
+- Layouts, Cards Modals etc
+
+- Forwarding props using spread operator
+
+
+## Rest Operator
+- Purpose: Collects multiple values into one variable.
+```javascript
+const [first, ...others] = [10, 20, 30, 40];
+
+console.log(first);
+console.log(others);
+```
+
+## 1. Spread Operator (...)
+- Purpose: Expands (spreads) elements or properties.
+
+```javascript
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1];
+
+console.log(arr2);
+```
+

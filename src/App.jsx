@@ -1,4 +1,4 @@
-import { StyledForm } from "./StyledForm"
+import { CardWrapper } from "./CardWrapper"
 
 function Welcome() {
   return <h2>Hello Welcome</h2>
@@ -20,7 +20,17 @@ function App() {
       <ContactFrom /> */}
       {/* <Welcome /> */}
       {/* <Button /> */}
-      <StyledForm />
+      {/* <StyledForm /> */}
+      {/* <Greeting name="Mohan" message="Good morning Mohan" />
+      <Greeting name="Clark" message="Good Morning Clark" />
+      <Greeting name="Somakshi" message="Good Morning Somakshi" />
+      <Greeting /> */}
+      {/* <UserCard name="Sanju" city="Indore" age="24" email="developer.sukhendra@gmail.com" /> */}
+      <CardWrapper>
+        <p>sanju</p>
+        <p>sanju@gmail.com</p>
+        <button>Edit Profile</button>
+      </CardWrapper>
     </div>
   )
 }
