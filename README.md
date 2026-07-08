@@ -87,3 +87,58 @@ const arr2 = [...arr1];
 console.log(arr2);
 ```
 
+# Conditional rendering
+## 4 ways of conditional rendering
+
+1. If Statement
+
+```javascript
+export const UserDetails = ({ name, isOnline, hideOffline }) => {
+
+    if (hideOffline && !isOnline) {
+        return null
+    }
+
+    if (isOnline) {
+        return (
+            <div>
+                <h3>{name}</h3>
+                <p>Online</p>
+                <p>Available for chat</p>
+                <button>Send Message</button>
+            </div>
+        )
+    }
+
+    return (
+        <div>
+            <h3>{name}</h3>
+            <p>Status: Offile</p>
+            <p>Not Available</p>
+            <p>Check back later</p>
+        </div>
+    )
+}
+```
+
+2. Ternary Operator (?:)
+
+```javascript
+ <div>
+            <h3>{name}</h3>
+            <p>{isOnline ? "Online" : "Offline"}</p>
+            <p>{isOnline ? "Available for chat" : "Not Availble for chat"}</p>
+            {
+                isOnline ? (
+                    <button>Send Message</button>
+                ) : (
+                    <p>Check back later</p>
+                )
+            }
+            <p>Check back later</p>
+        </div>
+```
+
+3. AND Operator (&&)
+
+

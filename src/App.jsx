@@ -1,4 +1,4 @@
-import { CardWrapper } from "./CardWrapper"
+import { UserDetails } from "./components/UserDetails"
 
 function Welcome() {
   return <h2>Hello Welcome</h2>
@@ -26,11 +26,13 @@ function App() {
       <Greeting name="Somakshi" message="Good Morning Somakshi" />
       <Greeting /> */}
       {/* <UserCard name="Sanju" city="Indore" age="24" email="developer.sukhendra@gmail.com" /> */}
-      <CardWrapper>
+      {/* <CardWrapper>
         <p>sanju</p>
         <p>sanju@gmail.com</p>
         <button>Edit Profile</button>
-      </CardWrapper>
+      </CardWrapper> */}
+      <UserDetails name="Mohan" isOnline={true} hideOffline={true} />
+      {/* <UserDetails name="Deepak" isOnline={false} hideOffline={true} /> */}
     </div>
   )
 }
